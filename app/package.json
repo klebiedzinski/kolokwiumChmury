@@ -1,0 +1,19 @@
+{
+  "name": "kolokwium",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node -e \"const { readFileSync, writeFileSync } = require('fs'); const code = readFileSync('index.js', 'utf8'); const result = require('uglify-js').minify(code); writeFileSync('index.min.js', result.code);\"",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "uglify-js": "^3.17.4",
+    "uglifyjs": "^2.4.11"
+  }
+}
