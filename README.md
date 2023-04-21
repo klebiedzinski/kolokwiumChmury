@@ -4,7 +4,7 @@
 - image: https://hub.docker.com/r/klebiedzinski/kolokwium
 
 - do odpalenia skryptu potrzebujemy
--- chmod +x script.sh
--- ./script.sh PORT
+  - chmod +x script.sh
+  - ./script.sh PORT
 
 
